@@ -45,7 +45,7 @@ func New(course, name, date string) (*Cert, error) {
 		Date:               d,
 		LabelTitle:         fmt.Sprintf("%v Certificat - %v", c, n),
 		LabelCompletion:    "Certificat d'accomplissement",
-		LabelPresented:     "Ce certificat est présenté à",
+		LabelPresented:     `Ce certificat est présenté à`,
 		LabelParticipation: fmt.Sprintf("Pour la participation de %v", c),
 		LabelDate:          fmt.Sprintf("Date: %v", d.Format("02/01/2006")),
 	}
